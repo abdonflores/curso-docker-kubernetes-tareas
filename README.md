@@ -17,9 +17,9 @@
  Comandos ejecutados 
    
 a.   docker run -d --name mi-apache -p 8081:80 httpd
- Ejecuta el contenedor Apache en segundo plano
+ > Ejecuta el contenedor Apache en segundo plano
 
 b. docker ps
- Verifica  que el contenedor está corriendo 
+ > Verifica  que el contenedor está corriendo 
 
 c. Verificar en el navegador
