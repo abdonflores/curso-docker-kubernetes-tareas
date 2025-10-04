@@ -7,7 +7,7 @@
 
 ## 📚 Índice
 
-- [Clase 1](clase1/) [Clase 1](https://iquattrogroup.com/mod/url/view.php?id=1251)
+- [Clase 1](clase1/)  (https://iquattrogroup.com/mod/url/view.php?id=1251)
 
 
  
