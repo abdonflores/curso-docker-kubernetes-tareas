@@ -1,0 +1,391 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# C extensions
+*.so
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+
+# PyInstaller
+# Usually these are created by a python script from a template
+# The actual filenames are determined by the script
+*.manifest
+*.spec
+
+# Installer logs
+install_log.txt
+install_log.lst
+install.log
+install.lst
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.egg-info/
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+*.pot
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation docs/
+.doctrees/
+.buildinfo
+
+# PyInstaller
+# Usually these are created by a python script from a template
+# The actual filenames are determined by the script
+*.manifest
+*.spec
+
+# Installer logs
+install_log.txt
+install_log.lst
+install.log
+install.lst
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.egg-info/
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+*.pot
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation docs/
+.doctrees/
+.buildinfo
+
+# PyInstaller
+# Usually these are created by a python script from a template
+# The actual filenames are determined by the script
+*.manifest
+*.spec
+
+# Installer logs
+install_log.txt
+install_log.lst
+install.log
+install.lst
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.egg-info/
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+*.pot
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation docs/
+.doctrees/
+.buildinfo
+
+# PyInstaller
+# Usually these are created by a python script from a template
+# The actual filenames are determined by the script
+*.manifest
+*.spec
+
+# Installer logs
+install_log.txt
+install_log.lst
+install.log
+install.lst
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.egg-info/
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+*.pot
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation docs/
+.doctrees/
+.buildinfo
+
+# PyInstaller
+# Usually these are created by a python script from a template
+# The actual filenames are determined by the script
+*.manifest
+*.spec
+
+# Installer logs
+install_log.txt
+install_log.lst
+install.log
+install.lst
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.egg-info/
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+*.pot
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation docs/
+.doctrees/
+.buildinfo
+
+# PyInstaller
+# Usually these are created by a python script from a template
+# The actual filenames are determined by the script
+*.manifest
+*.spec
+
+# Installer logs
+install_log.txt
+install_log.lst
+install.log
+install.lst
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.egg-info/
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+*.pot
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation docs/
+.doctrees/
+.buildinfo
+
+# PyInstaller
+# Usually these are created by a python script from a template
+# The actual filenames are determined by the script
+*.manifest
+*.spec
+
+# Installer logs
+install_log.txt
+install_log.lst
+install.log
+install.lst
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.egg-info/
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+*.pot
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation docs/
+.doctrees/
+.buildinfo
+
+# PyInstaller
+# Usually these are created by a python script from a template
+# The actual filenames are determined by the script
+*.manifest
+*.spec
+
+# Installer logs
+install_log.txt
+install_log.lst
+install.log
+install.lst
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.egg-info/
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+*.pot
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation docs/
+.doctrees/
+.buildinfo
+
+# PyInstaller
+# Usually these are created by a python script from a template
+# The actual filenames are determined by the script
+*.manifest
+*.spec
+
+# Installer logs
+install_log.txt
+install_log.lst
+install.log
+install.lst
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.egg-info/
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+*.pot
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation docs/
+.doctrees/
+.buildinfo
+
+# PyInstaller
+# Usually these are created by a python script from a template
+# The actual filenames are determined by the script
+*.manifest
+*.spec
+
+# Installer logs
+install_log.txt
+install_log.lst
+install.log
