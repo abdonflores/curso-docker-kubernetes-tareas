@@ -152,7 +152,7 @@ mi-app       1.0       508a9937e88b   2 minutes ago   197MB
 Optimización |Descripción |
 |--------|------|
 Multi-stage build|	Separa dependencias de dev|
-Imagen base ligera (Alpine)	|Reduce tamaño|
-Usuario no root	|Mejora seguridad|
+Imagen base ligera (Alpine)	|Reduce el tamaño|
+Usuario no root	|Mejora la seguridad|
 .dockerignore	|Excluye archivos innecesarios|
 HEALTHCHECK	|Verifica que el servicio responde|
