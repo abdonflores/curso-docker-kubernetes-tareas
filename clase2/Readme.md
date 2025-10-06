@@ -68,9 +68,25 @@ CMD ["node", "src/index.js"]
 
 
 ```
-# Explicación de Stage.
+# 3. Explicación de Stage.
 Stage |Función |
 |--------|------|
 build |Instala dependencias (desarrollo y producción) |
 production |Contiene solo archivos necesarios y dependencias de prod |
 
+## Tabla de instrucciones principales:
+
+instrucción |Explicación |
+|--------|------|
+FROM		|Define imagen base|
+WORKDIR		|Directorio de trabajo dentro del contenedor|
+COPY		|Copia archivos/directorios al contenedor|
+RUN			|Ejecuta comandos en el contenedor|
+USER		|Establece usuario no root|
+CMD			|Comando de inicio|
+ENV			|Variables de entorno|
+LABEL		|Metadata de la imagen|
+EXPOSE		|Expone el puerto para el contenedor|
+HEALTHCHECK	|Verifica salud del servicio|
+
+# 4.Proceso de Build
