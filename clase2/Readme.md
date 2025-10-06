@@ -69,7 +69,7 @@ CMD ["node", "src/index.js"]
 
 ```
 # Explicación de Stage.
-Stage|Función |
-build|Instala dependencias (desarrollo y producción) |
-production|Contiene solo archivos necesarios y dependencias de prod |
+Stage |Función |
+build |Instala dependencias (desarrollo y producción) |
+production |Contiene solo archivos necesarios y dependencias de prod |
 
