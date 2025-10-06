@@ -158,3 +158,15 @@ Usuario no root	|Mejora la seguridad|
 HEALTHCHECK	|Verifica que el servicio responde|
 
 > comando docker_history.png
+## 7. Conclusiones
+
+```
+La imagen fue  197MB que según la documentación ya representa cierta optimización porque en ambos estoy utilizando en ambas stages utilizo Alpine, tambien utilice 
+
+FROM node:20-alpine AS build
+FROM node:20-alpine AS production
+
+tampoco copie archivos inncesarios 
+No logre disminuir mas el tamaño.
+
+```
