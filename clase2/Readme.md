@@ -68,7 +68,7 @@ CMD ["node", "src/index.js"]
 
 
 ```
-# 3. Explicación de Stage.
+## Explicación de Stage.
 Stage |Función |
 |--------|------|
 build |Instala dependencias (desarrollo y producción) |
@@ -89,4 +89,4 @@ LABEL		|Metadata de la imagen|
 EXPOSE		|Expone el puerto para el contenedor|
 HEALTHCHECK	|Verifica salud del servicio|
 
-# 4.Proceso de Build
+# 3.Proceso de Build
