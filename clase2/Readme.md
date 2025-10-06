@@ -156,3 +156,5 @@ Imagen base ligera (Alpine)	|Reduce el tamaño|
 Usuario no root	|Mejora la seguridad|
 .dockerignore	|Excluye archivos innecesarios|
 HEALTHCHECK	|Verifica que el servicio responde|
+
+> comando docker_history.png
