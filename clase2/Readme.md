@@ -5,12 +5,14 @@
 ## Framework: Express (Node.js)
 
 ## Endpoints:
+```
+  /: Retorna saludo general
 
-> /: Retorna saludo general
+  /saludo: Retorna saludo específico
 
-> /saludo: Retorna saludo específico
+  Puerto configurable vía variable de entorno PORT
 
-> Puerto configurable vía variable de entorno PORT
+```
 # 2. Dockerfile
 
 ```
