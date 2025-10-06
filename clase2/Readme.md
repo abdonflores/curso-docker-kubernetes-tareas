@@ -90,3 +90,6 @@ EXPOSE		|Expone el puerto para el contenedor|
 HEALTHCHECK	|Verifica salud del servicio|
 
 # 3.Proceso de Build
+```
+docker build -t mi-app:1.0 .
+```
