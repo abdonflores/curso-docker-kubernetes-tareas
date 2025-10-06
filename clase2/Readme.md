@@ -137,3 +137,8 @@ D:\xxxxxx\cursos\docker\Curso2\my-app>docker images mi-app
 REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
 mi-app       1.0       508a9937e88b   2 minutes ago   197MB
 ```
+
+# 4. Testing Local
+> revisar capturas de pantalla
+# 5. Publicación en Docker Hub
+> revisar capturas de pantalla
