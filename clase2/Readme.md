@@ -140,5 +140,19 @@ mi-app       1.0       508a9937e88b   2 minutes ago   197MB
 
 # 4. Testing Local
 > revisar capturas de pantalla
+> paso1_construir_la_imagen.png
+> paso_2_revisaTamaño.png
+> paso_3_Probar endpoints.png
+> docker_ps.png
+> docker_image.png
 # 5. Publicación en Docker Hub
-> revisar capturas de pantalla
+> publicacion.png
+# 6. Optimizaciones Aplicadas
+
+Optimización |Descripción |
+|--------|------|
+Multi-stage build|	Separa dependencias de dev|
+Imagen base ligera (Alpine)	|Reduce tamaño|
+Usuario no root	|Mejora seguridad|
+.dockerignore	|Excluye archivos innecesarios|
+HEALTHCHECK	|Verifica que el servicio responde|
