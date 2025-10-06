@@ -1,8 +1,8 @@
 # 1. Descripción de la Aplicaciónss
 
-##Lenguaje: JavaScript
+## Lenguaje: JavaScript
 
-##Framework: Express (Node.js)
+## Framework: Express (Node.js)
 
 ## Endpoints:
 
