@@ -369,13 +369,6 @@ docker@ubuntu:~/cursoDocker/clase3/clase3-app-docker$ docker network inspect red
 
 
 ```
-
-### Puerto ya en uso
-```bash
-# Cambiar puertos en docker-compose.yml
-# Por ejemplo: "8082:80" en lugar de "8080:80"
-```
-
 ### Reiniciar todo desde cero
 ```bash
 docker-compose down -v
