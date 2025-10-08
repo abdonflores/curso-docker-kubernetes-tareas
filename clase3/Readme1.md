@@ -219,9 +219,7 @@ docker-compose up -d --scale api=3
 - Variables de entorno para configuración
 - Health checks implícitos
 
-## Troubleshooting
-
-### La API no puede conectarse a PostgreSQL
+### Revisiones
 ```bash
 # Verificar que postgres esté corriendo
 docker-compose ps postgres
@@ -230,8 +228,6 @@ docker@ubuntu:~/cursoDocker/clase3/clase3-app-docker$ docker-compose ps postgres
 WARN[0000] /home/docker/cursoDocker/clase3/clase3-app-docker/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
 NAME          IMAGE                COMMAND                  SERVICE    CREATED       STATUS       PORTS
 mi-postgres   postgres:14-alpine   "docker-entrypoint.s…"   postgres   3 hours ago   Up 3 hours   0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp
-
-
 
 # Ver logs de postgres
 docker-compose logs postgres
