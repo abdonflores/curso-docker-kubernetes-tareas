@@ -423,7 +423,8 @@ WARN[0000] /home/docker/cursoDocker/clase3/clase3-app-docker/docker-compose.yml:
 ```
 
 ## Probado otros comandos
-### docker network ls
+** docker network ls **
+```
 docker@ubuntu:~/cursoDocker/clase3/clase3-app-docker/nginx/html$ docker network ls
 NETWORK ID     NAME                   DRIVER    SCOPE
 ee6d53429f28   bridge                 bridge    local
@@ -433,8 +434,9 @@ d04cc40d340c   docker_default         bridge    local
 c58201c33ae2   none                   null      local
 eadb942ef706   red-backend            bridge    local
 f66eeee451a7   red-frontend           bridge    local
-
-### docker exec
+```
+** docker exec **
+```
 docker@ubuntu:~/cursoDocker/clase3/clase3-app-docker/nginx/html$ docker ps
 CONTAINER ID   IMAGE                   COMMAND                  CREATED         STATUS         PORTS                                              NAMES
 5f640fd3dd8f   nginx:alpine            "/docker-entrypoint.…"   7 minutes ago   Up 7 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp            mi-nginx
@@ -453,7 +455,7 @@ PING mi-postgres (172.20.0.2): 56 data bytes
 64 bytes from 172.20.0.2: seq=6 ttl=64 time=0.146 ms
 64 bytes from 172.20.0.2: seq=7 ttl=64 time=0.087 ms
 64 bytes from 172.20.0.2: seq=8 ttl=64 time=0.090 ms
-
+```
  
 ## Checklist de conceptos aplicados
 
