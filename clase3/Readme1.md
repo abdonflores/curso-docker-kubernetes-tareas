@@ -371,7 +371,7 @@ docker@ubuntu:~/cursoDocker/clase3/clase3-app-docker$ docker network inspect red
 ```
 ### Reiniciar todo desde cero
 ```bash
-docker-compose down -v
+`` docker-compose down -v
 
 docker@ubuntu:~/cursoDocker/clase3/clase3-app-docker$ docker-compose down -v
 WARN[0000] /home/docker/cursoDocker/clase3/clase3-app-docker/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
@@ -386,7 +386,40 @@ WARN[0000] /home/docker/cursoDocker/clase3/clase3-app-docker/docker-compose.yml:
  ✔ Volume datos-postgres  Removed  
  
  
-docker-compose up -d --build
+ `` docker-compose up -d --build
+
+
+WARN[0000] /home/docker/cursoDocker/clase3/clase3-app-docker/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+[+] Building 3.2s (12/12) FINISHED
+ => [internal] load local bake definitions                                                                                                                                                                     0.0s
+ => => reading from stdin 567B                                                                                                                                                                                 0.0s
+ => [internal] load build definition from dockerfile                                                                                                                                                           0.0s
+ => => transferring dockerfile: 161B                                                                                                                                                                           0.0s
+ => [internal] load metadata for docker.io/library/node:16-alpine                                                                                                                                              2.9s
+ => [internal] load .dockerignore                                                                                                                                                                              0.0s
+ => => transferring context: 2B                                                                                                                                                                                0.0s
+ => [1/5] FROM docker.io/library/node:16-alpine@sha256:a1f9d027912b58a7c75be7716c97cfbc6d3099f3a97ed84aa490be9dee20e787                                                                                        0.0s
+ => [internal] load build context                                                                                                                                                                              0.0s
+ => => transferring context: 124B                                                                                                                                                                              0.0s
+ => CACHED [2/5] WORKDIR /app                                                                                                                                                                                  0.0s
+ => CACHED [3/5] COPY package*.json ./                                                                                                                                                                         0.0s
+ => CACHED [4/5] RUN npm install                                                                                                                                                                               0.0s
+ => CACHED [5/5] COPY . .                                                                                                                                                                                      0.0s
+ => exporting to image                                                                                                                                                                                         0.0s
+ => => exporting layers                                                                                                                                                                                        0.0s
+ => => writing image sha256:3586009e2f97948644475b3d544e30d5ca5c1e2a4d7b049b85862b4a095c8a3b                                                                                                                   0.0s
+ => => naming to docker.io/library/clase3-app-docker-api                                                                                                                                                       0.0s
+ => resolving provenance for metadata file                                                                                                                                                                     0.0s
+[+] Running 9/9
+ ✔ clase3-app-docker-api  Built                                                                                                                                                                                0.0s
+ ✔ Network red-backend    Created                                                                                                                                                                              0.1s
+ ✔ Network red-frontend   Created                                                                                                                                                                              0.1s
+ ✔ Volume datos-postgres  Created                                                                                                                                                                              0.0s
+ ✔ Volume datos-pgadmin   Created                                                                                                                                                                              0.0s
+ ✔ Container mi-postgres  Started                                                                                                                                                                              1.7s
+ ✔ Container mi-pgadmin   Started                                                                                                                                                                              3.4s
+ ✔ Container mi-api       Started                                                                                                                                                                              3.2s
+ ✔ Container mi-nginx     Started                                      
 ```
  
 ## Checklist de conceptos aplicados
