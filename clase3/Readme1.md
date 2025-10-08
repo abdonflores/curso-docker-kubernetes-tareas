@@ -98,10 +98,6 @@ mi-postgres   postgres:14-alpine      "docker-entrypoint.s…"   postgres   Abou
 ## Endpoints de la API
 
 ## test de los endpoint
-```
-
-
-```
 
 ### EndPoint para obtener todos los usuarios
 ```bash
