@@ -423,7 +423,7 @@ WARN[0000] /home/docker/cursoDocker/clase3/clase3-app-docker/docker-compose.yml:
 ```
 
 ## Probado otros comandos
-** docker network ls **
+> docker network ls  
 ```
 docker@ubuntu:~/cursoDocker/clase3/clase3-app-docker/nginx/html$ docker network ls
 NETWORK ID     NAME                   DRIVER    SCOPE
@@ -435,7 +435,7 @@ c58201c33ae2   none                   null      local
 eadb942ef706   red-backend            bridge    local
 f66eeee451a7   red-frontend           bridge    local
 ```
-** docker exec **
+> docker exec  
 ```
 docker@ubuntu:~/cursoDocker/clase3/clase3-app-docker/nginx/html$ docker ps
 CONTAINER ID   IMAGE                   COMMAND                  CREATED         STATUS         PORTS                                              NAMES
