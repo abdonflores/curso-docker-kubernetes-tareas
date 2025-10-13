@@ -92,7 +92,7 @@ Todos los servicios están conectados a través de la red Docker `ecommerce-net`
 Todos los servicios están conectados a través de la red `ecommerce-net` con DNS automático.
 
 ##  Servicios
-```
+ 
 | Servicio         | Tecnología | Puerto Externo | Puerto Interno | Descripción                     |
 |------------------|------------|----------------|----------------|----------------------------------|
 | `gateway`        | Nginx      | 8080           | 80             | API Gateway                      |
@@ -122,7 +122,8 @@ Todos los servicios están conectados a través de la red `ecommerce-net` con DN
 <details>
 <summary>Ver salida completa de <code>docker compose ps</code></summary>
 
-```console
+```
+console
 docker@ubuntu:~/cursoDocker/curso4/tarea4/gateway$ docker compose ps
 WARN[0000] /home/docker/cursoDocker/curso4/tarea4/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
 NAME                        IMAGE                     COMMAND                  SERVICE            CREATED         STATUS         PORTS
