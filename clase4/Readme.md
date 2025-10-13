@@ -40,13 +40,7 @@ graph TB
     Cart -.-> Redis
     Cart -.-> MongoDB
     
-    style Client fill:#e1f5ff
-    style Nginx fill:#ffe1e1
-    style Products fill:#e1ffe1
-    style Cart fill:#e1ffe1
-    style Frontend fill:#ffe1ff
-    style Redis fill:#fff4e1
-    style MongoDB fill:#fff4e1
+  
 ```
 
 ## Flujo de Peticiones
@@ -56,6 +50,7 @@ graph TB
 | `/api/products` | service-products | 5000 |
 | `/api/cart` | service-cart | 5001 |
 | `/` | frontend | 80 |
+
 
 ## Componentes
 
