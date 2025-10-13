@@ -131,7 +131,15 @@ tarea4-service-cart-1       tarea4-service-cart       "docker-entrypoint.s…"  
 tarea4-service-products-1   tarea4-service-products   "docker-entrypoint.s…"   service-products   4 minutes ago   Up 4 minutes   0.0.0.0:32777->5000/tcp, [::]:32777->5000/tcp
 docker@ubuntu:~/cursoDocker/curso4/tarea4/gateway$
 ```
- # PRUEBAS.
+ # Pruebas.
+```
+**Primera petición → MISS **
+curl http://localhost:8080/api/products
+docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl http://localhost:8080/api/products
+{"source":"database","data":[{"_id":"68ed595d081ac2f98e5ac1c7","name":"Laptop","price":1200,"__v":0},{"_id":"68ed5b5e081ac2f98e5ac1cb","name":"Mouse","price":25,"__v":0}]}docker@ubuntu:~/cursoDocker/curso4/tarea4$
+
+```
+ 
 
  
  
