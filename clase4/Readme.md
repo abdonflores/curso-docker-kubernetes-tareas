@@ -118,10 +118,6 @@ Todos los servicios están conectados a través de la red `ecommerce-net` con DN
 
  
  ### Salida completa del comando
-
-<details>
-<summary>Ver salida completa de <code>docker compose ps</code></summary>
-
 ```
  
 docker@ubuntu:~/cursoDocker/curso4/tarea4/gateway$ docker compose ps
