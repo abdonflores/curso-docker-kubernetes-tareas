@@ -104,17 +104,21 @@ Todos los servicios están conectados a través de la red `ecommerce-net` con DN
 
 > 🔹 Los puertos marcados con "—" no están expuestos al host, solo son accesibles dentro de la red Docker.
 
+## docker compose ps 
+## Estado de los Contenedores
+
 ```
- docker@ubuntu:~/cursoDocker/curso4/tarea4/gateway$ docker compose ps
-WARN[0000] /home/docker/cursoDocker/curso4/tarea4/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential conf                             usion
+docker@ubuntu:~/cursoDocker/curso4/tarea4/gateway$ docker compose ps
+WARN[0000] /home/docker/cursoDocker/curso4/tarea4/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
 NAME                        IMAGE                     COMMAND                  SERVICE            CREATED         STATUS         PORTS
-tarea4-db-1                 mongo:4.4                 "docker-entrypoint.s…"   db                 4 minutes ago   Up 4 minutes   0.0.0.0:32773->27017/tcp, [::]:32773->                             27017/tcp
-tarea4-frontend-1           tarea4-frontend           "/docker-entrypoint.…"   frontend           4 minutes ago   Up 4 minutes   0.0.0.0:32774->80/tcp, [::]:32774->80/                             tcp
-tarea4-gateway-1            nginx:alpine              "/docker-entrypoint.…"   gateway            4 minutes ago   Up 4 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tc                             p
-tarea4-redis-1              redis:alpine              "docker-entrypoint.s…"   redis              4 minutes ago   Up 4 minutes   0.0.0.0:32775->6379/tcp, [::]:32775->6                             379/tcp
-tarea4-service-cart-1       tarea4-service-cart       "docker-entrypoint.s…"   service-cart       4 minutes ago   Up 4 minutes   0.0.0.0:32776->5001/tcp, [::]:32776->5                             001/tcp
-tarea4-service-products-1   tarea4-service-products   "docker-entrypoint.s…"   service-products   4 minutes ago   Up 4 minutes   0.0.0.0:32777->5000/tcp, [::]:32777->5                             000/tcp
+tarea4-db-1                 mongo:4.4                 "docker-entrypoint.s…"   db                 4 minutes ago   Up 4 minutes   0.0.0.0:32773->27017/tcp, [::]:32773->27017/tcp
+tarea4-frontend-1           tarea4-frontend           "/docker-entrypoint.…"   frontend           4 minutes ago   Up 4 minutes   0.0.0.0:32774->80/tcp, [::]:32774->80/tcp
+tarea4-gateway-1            nginx:alpine              "/docker-entrypoint.…"   gateway            4 minutes ago   Up 4 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp
+tarea4-redis-1              redis:alpine              "docker-entrypoint.s…"   redis              4 minutes ago   Up 4 minutes   0.0.0.0:32775->6379/tcp, [::]:32775->6379/tcp
+tarea4-service-cart-1       tarea4-service-cart       "docker-entrypoint.s…"   service-cart       4 minutes ago   Up 4 minutes   0.0.0.0:32776->5001/tcp, [::]:32776->5001/tcp
+tarea4-service-products-1   tarea4-service-products   "docker-entrypoint.s…"   service-products   4 minutes ago   Up 4 minutes   0.0.0.0:32777->5000/tcp, [::]:32777->5000/tcp
 docker@ubuntu:~/cursoDocker/curso4/tarea4/gateway$
+```
 ```
  
  
