@@ -139,7 +139,12 @@ docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl http://localhost:8080/api/produc
 {"source":"database","data":[{"_id":"68ed595d081ac2f98e5ac1c7","name":"Laptop","price":1200,"__v":0},{"_id":"68ed5b5e081ac2f98e5ac1cb","name":"Mouse","price":25,"__v":0}]}docker@ubuntu:~/cursoDocker/curso4/tarea4$
 
 ```
- 
+ **Segunda petición → HIT**
+ ``` 
+docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl http://localhost:8080/api/products
+{"source":"database","data":[{"_id":"68ed595d081ac2f98e5ac1c7","name":"Laptop","price":1200,"__v":0},{"_id":"68ed5b5e081ac2f98e5ac1cb","name":"Mouse","price":25,"__v":0}]}docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl http://localhost:8080/api/products
+{"source":"cache","data":[{"_id":"68ed595d081ac2f98e5ac1c7","name":"Laptop","price":1200,"__v":0},{"_id":"68ed5b5e081ac2f98e5ac1cb","name":"Mouse","price":25,"__v":0}]}docker@ubuntu:~/cursoDocker/curso4/tarea4$
+```
 
  
  
