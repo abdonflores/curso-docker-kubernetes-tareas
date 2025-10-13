@@ -14,7 +14,7 @@ Aplicación de e-commerce básica construida con una arquitectura de microservic
 ```
 
 ##   Arquitectura
-```  
+```   
 Cliente (Navegador / curl)
 │
 ▼
@@ -32,6 +32,8 @@ Cliente (Navegador / curl)
 ▼                               ▼
 [ Redis ]                    [ MongoDB ]
  (cache)                     (persistencia)
+
+ 
 ```
 
 ##  Servicios
