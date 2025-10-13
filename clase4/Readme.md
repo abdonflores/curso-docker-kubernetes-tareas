@@ -105,7 +105,6 @@ Todos los servicios están conectados a través de la red `ecommerce-net` con DN
 > 🔹 Los puertos marcados con "—" no están expuestos al host, solo son accesibles dentro de la red Docker.
 
 ```
-
  docker@ubuntu:~/cursoDocker/curso4/tarea4/gateway$ docker compose ps
 WARN[0000] /home/docker/cursoDocker/curso4/tarea4/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential conf                             usion
 NAME                        IMAGE                     COMMAND                  SERVICE            CREATED         STATUS         PORTS
@@ -116,7 +115,6 @@ tarea4-redis-1              redis:alpine              "docker-entrypoint.s…"  
 tarea4-service-cart-1       tarea4-service-cart       "docker-entrypoint.s…"   service-cart       4 minutes ago   Up 4 minutes   0.0.0.0:32776->5001/tcp, [::]:32776->5                             001/tcp
 tarea4-service-products-1   tarea4-service-products   "docker-entrypoint.s…"   service-products   4 minutes ago   Up 4 minutes   0.0.0.0:32777->5000/tcp, [::]:32777->5                             000/tcp
 docker@ubuntu:~/cursoDocker/curso4/tarea4/gateway$
-
 ```
  
  
