@@ -116,7 +116,7 @@ Todos los servicios están conectados a través de la red `ecommerce-net` con DN
 | tarea4-service-cart-1 | tarea4-service-cart | service-cart | Up 4 minutes | 0.0.0.0:32776->5001/tcp |
 | tarea4-service-products-1 | tarea4-service-products | service-products | Up 4 minutes | 0.0.0.0:32777->5000/tcp |
 
-```
+ 
  ### Salida completa del comando
 
 <details>
