@@ -123,7 +123,7 @@ Todos los servicios están conectados a través de la red `ecommerce-net` con DN
 <summary>Ver salida completa de <code>docker compose ps</code></summary>
 
 ```
-console
+ 
 docker@ubuntu:~/cursoDocker/curso4/tarea4/gateway$ docker compose ps
 WARN[0000] /home/docker/cursoDocker/curso4/tarea4/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
 NAME                        IMAGE                     COMMAND                  SERVICE            CREATED         STATUS         PORTS
@@ -135,6 +135,8 @@ tarea4-service-cart-1       tarea4-service-cart       "docker-entrypoint.s…"  
 tarea4-service-products-1   tarea4-service-products   "docker-entrypoint.s…"   service-products   4 minutes ago   Up 4 minutes   0.0.0.0:32777->5000/tcp, [::]:32777->5000/tcp
 docker@ubuntu:~/cursoDocker/curso4/tarea4/gateway$
 ```
+ # PRUEBAS.
+
  
  
  
