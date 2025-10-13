@@ -13,28 +13,42 @@ Aplicación de e-commerce básica construida con una arquitectura de microservic
 
 ```
 
-##   Arquitectura
-```   
- Cliente (Navegador / curl)
-│
-▼
-[ Nginx Gateway ] ← puerto 8080
-├── /api/products → service-products (puerto 5000)
-├── /api/cart → service-cart (puerto 5001)
-└── / → frontend (puerto 80)
-│
-▼
-┌────────────────────────┐
-│     Docker Network      │ ← ecommerce-net (DNS automático)
-└────────────────────────┘
-│
-┌───────────────┴───────────────┐
-▼                               ▼
-[ Redis ]                    [ MongoDB ]
- (cache)                     (persistencia)
-
+# Arquitectura del Sistema E-commerce
 
 ```
+Cliente (Navegador / curl)
+          │
+          ▼
+  [ Nginx Gateway ] ← puerto 8080
+          │
+          ├── /api/products → service-products (puerto 5000)
+          ├── /api/cart     → service-cart (puerto 5001)
+          └── /             → frontend (puerto 80)
+          │
+          ▼
+  ┌────────────────────────┐
+  │   Docker Network       │ ← ecommerce-net (DNS automático)
+  └────────────────────────┘
+          │
+          │
+  ┌───────┴────────┐
+  ▼                ▼
+[ Redis ]      [ MongoDB ]
+(cache)        (persistencia)
+```
+
+## Componentes
+
+- **Nginx Gateway**: Punto de entrada único en el puerto 8080
+- **service-products**: Microservicio de productos (puerto 5000)
+- **service-cart**: Microservicio de carrito (puerto 5001)
+- **frontend**: Aplicación frontend (puerto 80)
+- **Redis**: Sistema de caché
+- **MongoDB**: Base de datos principal
+
+## Red Docker
+
+Todos los servicios están conectados a través de la red `ecommerce-net` con DNS automático.
 
 ##  Servicios
 ```
