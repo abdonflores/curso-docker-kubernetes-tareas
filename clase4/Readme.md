@@ -187,5 +187,38 @@ docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl http://localhost:8080/api/produc
 docker@ubuntu:~/cursoDocker/curso4/tarea4$
 docker@ubuntu:~/cursoDocker/curso4/tarea4$
 ```
+**Gateway Routing**
+```
+
+docker@ubuntu:~/cursoDocker/curso4/tarea4$
+docker@ubuntu:~/cursoDocker/curso4/tarea4$ ^C
+docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl http://localhost:8080/gateway/health
+{"status":"ok","service":"gateway"}
+docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl http://localhost:8080/api/products/health
+{"status":"ok","service":"products"}docker@ubuntu:~/cursoDocker/curso4/tarea4$
+docker@ubuntu:~/cursoDocker/curso4/tarea4$
+docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl http://localhost:8080/
+<!DOCTYPE html>
+<html>
+<head>
+  <title> TAREA4 - E-commerce</title>
+</head>
+<body>
+  <h1> TAREA 4.  E-commerce Demo</h1>
+  <button onclick="loadProducts()">Ver Productos</button>
+  <pre id="output"></pre>
+
+  <script>
+    async function loadProducts() {
+      const res = await fetch('/api/products');
+      const data = await res.json();
+      document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>
+docker@ubuntu:~/cursoDocker/curso4/tarea4$
+
+```
  
  
