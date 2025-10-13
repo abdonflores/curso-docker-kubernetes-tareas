@@ -15,19 +15,25 @@ Aplicación de e-commerce básica construida con una arquitectura de microservic
 
 ##   Arquitectura
 ```   
- **Cliente (Navegador / curl)**  
-  
-**Nginx Gateway** (puerto 8080)  
- ├── `/api/products` →  *service-products* (5000)  
- ├── `/api/cart` →  *service-cart* (5001)  
- └── `/` →  *frontend* (80)  
-  
-🌉 **Docker Network:** *ecommerce-net* (DNS automático)  
-  ├── **Redis** (cache)  
-  └── **MongoDB** (persistencia)
+ Cliente (Navegador / curl)
+│
+▼
+[ Nginx Gateway ] ← puerto 8080
+├── /api/products → service-products (puerto 5000)
+├── /api/cart → service-cart (puerto 5001)
+└── / → frontend (puerto 80)
+│
+▼
+┌────────────────────────┐
+│     Docker Network      │ ← ecommerce-net (DNS automático)
+└────────────────────────┘
+│
+┌───────────────┴───────────────┐
+▼                               ▼
+[ Redis ]                    [ MongoDB ]
+ (cache)                     (persistencia)
 
 
- 
 ```
 
 ##  Servicios
