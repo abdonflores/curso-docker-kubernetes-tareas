@@ -15,27 +15,73 @@ Aplicación de e-commerce básica construida con una arquitectura de microservic
 
 # Arquitectura del Sistema E-commerce
 
+## Diagrama de Arquitectura
+
+```mermaid
+graph TB
+    Client[Cliente<br/>Navegador / curl]
+    
+    Client --> Nginx[Nginx Gateway<br/>puerto 8080]
+    
+    Nginx -->|/api/products| Products[service-products<br/>puerto 5000]
+    Nginx -->|/api/cart| Cart[service-cart<br/>puerto 5001]
+    Nginx -->|/| Frontend[frontend<br/>puerto 80]
+    
+    subgraph Docker["Docker Network (ecommerce-net - DNS automático)"]
+        Products
+        Cart
+        Frontend
+        Redis[(Redis<br/>cache)]
+        MongoDB[(MongoDB<br/>persistencia)]
+    end
+    
+    Products -.-> Redis
+    Products -.-> MongoDB
+    Cart -.-> Redis
+    Cart -.-> MongoDB
+    
+    style Client fill:#e1f5ff
+    style Nginx fill:#ffe1e1
+    style Products fill:#e1ffe1
+    style Cart fill:#e1ffe1
+    style Frontend fill:#ffe1ff
+    style Redis fill:#fff4e1
+    style MongoDB fill:#fff4e1
 ```
-Cliente (Navegador / curl)
-          │
-          ▼
-  [ Nginx Gateway ] ← puerto 8080
-          │
-          ├── /api/products → service-products (puerto 5000)
-          ├── /api/cart     → service-cart (puerto 5001)
-          └── /             → frontend (puerto 80)
-          │
-          ▼
-  ┌────────────────────────┐
-  │   Docker Network       │ ← ecommerce-net (DNS automático)
-  └────────────────────────┘
-          │
-          │
-  ┌───────┴────────┐
-  ▼                ▼
-[ Redis ]      [ MongoDB ]
-(cache)        (persistencia)
-```
+
+## Flujo de Peticiones
+
+| Ruta | Destino | Puerto |
+|------|---------|--------|
+| `/api/products` | service-products | 5000 |
+| `/api/cart` | service-cart | 5001 |
+| `/` | frontend | 80 |
+
+## Componentes
+
+### Gateway
+- **Nginx Gateway**: Punto de entrada único (puerto 8080)
+  - Enruta las peticiones a los microservicios correspondientes
+  - Balancea carga y gestiona SSL/TLS
+
+### Microservicios
+- **service-products**: Gestión de productos (puerto 5000)
+- **service-cart**: Gestión del carrito de compras (puerto 5001)
+- **frontend**: Interfaz de usuario (puerto 80)
+
+### Bases de Datos
+- **Redis**: Sistema de caché para mejorar rendimiento
+- **MongoDB**: Base de datos principal para persistencia de datos
+
+### Infraestructura
+- **Red Docker**: `ecommerce-net` con DNS automático entre contenedores
+
+## Comunicación
+
+Todos los servicios están conectados a través de la red Docker `ecommerce-net`, lo que permite:
+- Resolución de nombres automática (DNS)
+- Comunicación interna entre servicios
+- Aislamiento de red
 
 ## Componentes
 
