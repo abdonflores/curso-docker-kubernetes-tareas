@@ -132,7 +132,7 @@ tarea4-service-products-1   tarea4-service-products   "docker-entrypoint.s…"  
 docker@ubuntu:~/cursoDocker/curso4/tarea4/gateway$
 ```
  # Pruebas.
- **Primera petición → MISS **
+ **Primera petición → MISS**
 ```
 curl http://localhost:8080/api/products
 docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl http://localhost:8080/api/products
