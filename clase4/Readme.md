@@ -1,6 +1,6 @@
 # Tarea 4 - Microservicios con Cache y Gateway
 
-## 📌 Descripción
+##  Descripción
 Aplicación de e-commerce básica construida con una arquitectura de microservicios. Permite gestionar productos y un carrito de compras, con caché en Redis, persistencia en MongoDB, y un API Gateway con Nginx.
 
 ### 🛠️ Tecnologías utilizadas
@@ -13,8 +13,8 @@ Aplicación de e-commerce básica construida con una arquitectura de microservic
 
 ```
 
-## 🏗️ Arquitectura
-```
+##   Arquitectura
+``` 
 Cliente (Navegador / curl)
 │
 ▼
@@ -24,19 +24,18 @@ Cliente (Navegador / curl)
 └── / → frontend (puerto 80)
 │
 ▼
-┌─────────────────┐
-│ Docker Network│ ← ecommerce-net (DNS automático)
-└─────────────────┘
+┌────────────────────────┐
+│     Docker Network      │ ← ecommerce-net (DNS automático)
+└────────────────────────┘
 │
-┌───────┴───────┐
-▼ ▼
-[ Redis ] [ MongoDB ]
-(cache) (persistencia)
+┌───────────────┴───────────────┐
+▼                               ▼
+[ Redis ]                    [ MongoDB ]
+ (cache)                     (persistencia)
 
-```
  
 
-## 📦 Servicios
+##  Servicios
 ```
 | Servicio         | Tecnología | Puerto Externo | Puerto Interno | Descripción                     |
 |------------------|------------|----------------|----------------|----------------------------------|
