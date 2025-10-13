@@ -220,5 +220,14 @@ docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl http://localhost:8080/
 docker@ubuntu:~/cursoDocker/curso4/tarea4$
 
 ```
- 
- 
+**Logs mostrando conexión a Redis y DB**
+```
+docker@ubuntu:~/cursoDocker/curso4/tarea4$ ^C
+docker@ubuntu:~/cursoDocker/curso4/tarea4$ docker compose logs service-products
+WARN[0000] /home/docker/cursoDocker/curso4/tarea4/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+service-products-1  | 📦 Products service running on port 5000
+service-products-1  | ✅ MongoDB connected
+service-products-1  | ✅ Redis connected
+docker@ubuntu:~/cursoDocker/curso4/tarea4$
+
+ ```
