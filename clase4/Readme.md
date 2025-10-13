@@ -146,6 +146,46 @@ docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl http://localhost:8080/api/produc
 {"source":"cache","data":[{"_id":"68ed595d081ac2f98e5ac1c7","name":"Laptop","price":1200,"__v":0},{"_id":"68ed5b5e081ac2f98e5ac1cb","name":"Mouse","price":25,"__v":0}]}docker@ubuntu:~/cursoDocker/curso4/tarea4$
 ```
 
- 
+**Invalidación de caché**
+```
+# Crear producto
+docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl -X POST http://localhost:8080/api/products -d '{"name":"Teclado","price":50}'
+{"_id":"68ed67f19df52c7158b9e3de","__v":0}docker@ubuntu:~/cursoDocker/curso4/tarea4$
+
+# La siguiente petición a /api/products usa DB (caché invalidado)
+docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl http://localhost:8080/api/products
+{"source":"database","data":[{"_id":"68ed595d081ac2f98e5ac1c7","name":"Laptop","price":1200,"__v":0},{"_id":"68ed5b5e081ac2f98e5ac1cb","name":"Mouse","price":25,"__v":0},{"_id":"68ed67c89df52c7158b9e3db","__v":0},{"_id":"68ed67f19df52c7158b9e3de","__v":0}]}docker@ubuntu:~/cursoDocker/curso4/tarea4$
+
+```
+**Persistencia de datos**
+```
+ docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl -X POST http://localhost:8080/api/products -d '{"name":"Monitor","price":300}'
+{"_id":"68ed684a9df52c7158b9e3e1","__v":0}docker@ubuntu:~/cursoDocker/curso4/tarea4$
+docker@ubuntu:~/cursoDocker/curso4/tarea4$
+docker@ubuntu:~/cursoDocker/curso4/tarea4$ docker compose down
+WARN[0000] /home/docker/cursoDocker/curso4/tarea4/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+[+] Running 7/7
+ ✔ Container tarea4-gateway-1           Removed                                                                                                                                                1.0s
+ ✔ Container tarea4-frontend-1          Removed                                                                                                                                                0.3s
+ ✔ Container tarea4-service-products-1  Removed                                                                                                                                               10.5s
+ ✔ Container tarea4-service-cart-1      Removed                                                                                                                                               10.5s
+ ✔ Container tarea4-redis-1             Removed                                                                                                                                                0.4s
+ ✔ Container tarea4-db-1                Removed                                                                                                                                                0.5s
+ ✔ Network tarea4_ecommerce-net         Removed                                                                                                                                                0.1s
+docker@ubuntu:~/cursoDocker/curso4/tarea4$ docker compose up -d
+WARN[0000] /home/docker/cursoDocker/curso4/tarea4/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+[+] Running 7/7
+ ✔ Network tarea4_ecommerce-net         Created                                                                                                                                                0.1s
+ ✔ Container tarea4-frontend-1          Started                                                                                                                                                2.9s
+ ✔ Container tarea4-redis-1             Started                                                                                                                                                3.1s
+ ✔ Container tarea4-db-1                Started                                                                                                                                                3.2s
+ ✔ Container tarea4-service-cart-1      Started                                                                                                                                                4.8s
+ ✔ Container tarea4-service-products-1  Started                                                                                                                                                4.9s
+ ✔ Container tarea4-gateway-1           Started                                                                                                                                                5.4s
+docker@ubuntu:~/cursoDocker/curso4/tarea4$ curl http://localhost:8080/api/products
+{"source":"database","data":[{"_id":"68ed595d081ac2f98e5ac1c7","name":"Laptop","price":1200,"__v":0},{"_id":"68ed5b5e081ac2f98e5ac1cb","name":"Mouse","price":25,"__v":0},{"_id":"68ed67c89df52c7158b9e3db","__v":0},{"_id":"68ed67f19df52c7158b9e3de","__v":0},{"_id":"68ed684a9df52c7158b9e3e1","__v":0}]}docker@ubuntu:~/cursoDocker/curso4/tarea4$
+docker@ubuntu:~/cursoDocker/curso4/tarea4$
+docker@ubuntu:~/cursoDocker/curso4/tarea4$
+```
  
  
