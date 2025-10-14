@@ -11,4 +11,5 @@
 - [Clase 2](clase2/)  (https://github.com/abdonflores/curso-docker-kubernetes-tareas/tree/main/clase2)
 - [Clase 3](clase3/)  (https://github.com/abdonflores/curso-docker-kubernetes-tareas/tree/main/clase3) 
 - [Clase 4](clase4/) (https://github.com/abdonflores/curso-docker-kubernetes-tareas/blob/main/clase4)
+- [Clase 5](clase5/) (https://github.com/abdonflores/curso-docker-kubernetes-tareas/tree/main/clase5)
  
