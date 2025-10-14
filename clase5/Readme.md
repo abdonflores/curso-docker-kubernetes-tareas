@@ -46,6 +46,7 @@ Este proyecto incluye un **análisis de línea base y una optimización de segur
 **Comparativa: Baseline vs Optimizado**
 
 | Métrica | Baseline | Optimizado | Mejora |
+|------|------------|--------|--------|
 |Tamaño imagen|175 MB|161 MB|✅ -8%|
 |Vulnerabilidades CRITICAL|0|0|—|
 |Vulnerabilidades HIGH|1|1*|"⚠️ Misma| pero en contexto seguro"|
