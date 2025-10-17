@@ -215,12 +215,39 @@ Datos en PostgreSQL (SELECT)
 Prueba de persistencia (después de eliminar pod)
 e) Comandos de limpieza:
 
-kubectl delete namespace tarea-clase7
+``kubectl delete namespace tarea-clase7``
+
+```
+
+docker@ubuntu:~/cursoDocker/curso7$ kubectl delete namespace tarea-clase7
+namespace "tarea-clase7" deleted
+
+
+```
+
 # Esto elimina todo: pods, services, configmaps, secrets, pvcs
-Parte 8: Limpieza (5 puntos)
-8.1 Eliminar todos los recursos
-kubectl delete namespace tarea-clase7
-8.2 Verificar
-kubectl get namespaces | grep tarea-clase7
-kubectl get pvc --all-namespaces | grep tarea-clase7
+**Parte 8: Limpieza**
+### 8.1 Eliminar todos los recursos
+``kubectl delete namespace tarea-clase7``
+```
+
+docker@ubuntu:~/cursoDocker/curso7$ kubectl delete namespace tarea-clase7
+namespace "tarea-clase7" deleted
+
+```
+### 8.2 Verificar
+``kubectl get namespaces | grep tarea-clase7``
+
+```
+docker@ubuntu:~/cursoDocker/curso7$ kubectl get namespaces | grep tarea-clase7
+docker@ubuntu:~/cursoDocker/curso7$ kubectl get pvc --all-namespaces | grep tarea-clase7
+
+```
+``kubectl get pvc --all-namespaces | grep tarea-clase7``
+
+```
+docker@ubuntu:~/cursoDocker/curso7$ kubectl get pvc --all-namespaces | grep tarea-clase7
+No resources found
+
+```
  
