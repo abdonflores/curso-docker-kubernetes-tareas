@@ -2,12 +2,12 @@
 ```
 Nombre: Luis Abdon Flores
 ```
-#Objetivo
+# Objetivo
 Aplicar los conceptos de Namespaces, ConfigMaps, Secrets y StatefulSets desplegando PostgreSQL con persistencia en Kubernetes.
 
 Nota importante: Esta tarea se enfoca en los conceptos de Kubernetes, NO en desarrollo de aplicaciones. Usarás imágenes pre-construidas.
 
-#Requisitos
+# Requisitos
 Desplegar PostgreSQL en Kubernetes usando:
 
 Namespace dedicado
@@ -17,19 +17,19 @@ StatefulSet con persistencia (PVC)
 Headless Service para acceso interno
 Tiempo estimado: 2-3 horas
 
-#Descripción:
+# Descripción:
 
-##Objetivo de la tarea
+## Objetivo de la tarea
 Conceptos aplicados (namespace, configmap, secret, statefulset, pvc)
 
-- **Desplegar PostgreSQL en Kubernetes aplicando los conceptos:
-- **Namespace
-- **ConfigMap
-- **Secret
-- **StatefulSet (con PVC)
-- **Headless Service
+- **Desplegar PostgreSQL en Kubernetes aplicando los conceptos:**
+- **Namespace**
+- **ConfigMap**
+- **Secret**
+- **StatefulSet (con PVC)**
+- **Headless Service**
 
-###Instrucciones paso a paso:
+### Instrucciones paso a paso:
 
 ``Crear namespace``
 
