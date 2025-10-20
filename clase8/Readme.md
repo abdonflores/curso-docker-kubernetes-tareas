@@ -25,7 +25,8 @@ Desplegar una aplicación de 2 capas (frontend + backend) usando Ingress para ro
     minikube addons enable metrics-server
    ```
 3. Aplicar manifests completos del stack:
-   ```
+   
+   ``` bash
   docker@ubuntu:~/cursoDocker/curso8$  kubectl apply -f backend.yaml -n tarea-clase8
   deployment.apps/backend unchanged
   service/backend-service unchanged
