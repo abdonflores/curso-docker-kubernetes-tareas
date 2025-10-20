@@ -22,7 +22,21 @@ Desplegar una aplicación de 2 capas (frontend + backend) usando Ingress para ro
    ```
     minikube start
     minikube addons enable ingress
+   docker@ubuntu:~/cursoDocker/curso8$ minikube addons enable ingress
+* ingress is an addon maintained by Kubernetes. For any concerns contact minikube on GitHub.
+You can view the list of minikube maintainers at: https://github.com/kubernetes/minikube/blob/master/OWNERS
+  - Using image registry.k8s.io/ingress-nginx/kube-webhook-certgen:v1.6.2
+  - Using image registry.k8s.io/ingress-nginx/kube-webhook-certgen:v1.6.2
+  - Using image registry.k8s.io/ingress-nginx/controller:v1.13.2
+* Verifying ingress addon...
+* The 'ingress' addon is enabled
+
     minikube addons enable metrics-server
+  ocker@ubuntu:~/cursoDocker/curso8$ minikube addons enable metrics-server
+* metrics-server is an addon maintained by Kubernetes. For any concerns contact minikube on GitHub.
+You can view the list of minikube maintainers at: https://github.com/kubernetes/minikube/blob/master/OWNERS
+  - Using image registry.k8s.io/metrics-server/metrics-server:v0.8.0
+* The 'metrics-server' addon is enabled
    ```
 3. Aplicar manifests completos del stack:
    
