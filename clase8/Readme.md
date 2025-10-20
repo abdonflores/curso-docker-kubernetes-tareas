@@ -17,6 +17,7 @@ Desplegar una aplicación de 2 capas (frontend + backend) usando Ingress para ro
 - **Health Probes (liveness/readiness):** Mantienen pods sanos y listos antes de recibir tráfico.
 - **Horizontal Pod Autoscaler (HPA):** Escala automáticamente los pods del backend según consumo de CPU.
 ## b) Instrucciones de despliegue
+
 1. Habilitar addons en Minikube:
    ```
     minikube start
@@ -24,8 +25,8 @@ Desplegar una aplicación de 2 capas (frontend + backend) usando Ingress para ro
     minikube addons enable metrics-server
    ```
 3. Aplicar manifests completos del stack:
-    ```
-   docker@ubuntu:~/cursoDocker/curso8$  kubectl apply -f backend.yaml -n tarea-clase8
+   ```
+  docker@ubuntu:~/cursoDocker/curso8$  kubectl apply -f backend.yaml -n tarea-clase8
   deployment.apps/backend unchanged
   service/backend-service unchanged
   docker@ubuntu:~/cursoDocker/curso8$ kubectl apply -f frontend.yaml -n tarea-clase8
@@ -35,10 +36,9 @@ Desplegar una aplicación de 2 capas (frontend + backend) usando Ingress para ro
   ingress.networking.k8s.io/app-ingress unchanged
   docker@ubuntu:~/cursoDocker/curso8$ kubectl apply -f hpa-backend.yaml -n tarea-clase8
   horizontalpodautoscaler.autoscaling/backend-hpa unchanged
-
    ```
 5. Verificar recursos desplegados:
-    ```
+  ```
  docker@ubuntu:~/cursoDocker/curso8$ kubectl get all -n tarea-clase8
 NAME                           READY   STATUS    RESTARTS   AGE
 pod/backend-6c7b9685f4-drrtz   1/1     Running   0          43m
