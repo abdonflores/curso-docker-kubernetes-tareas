@@ -187,3 +187,20 @@ Commercial support is available at
 docker@ubuntu:~/cursoDocker/curso8$
  
    ```
+
+### limpieza.
+
+  ```
+docker@ubuntu:~/cursoDocker/curso8$ kubectl delete ingress app-ingress -n tarea-clase8
+ingress.networking.k8s.io "app-ingress" deleted from tarea-clase8 namespace
+docker@ubuntu:~/cursoDocker/curso8$ kubectl delete hpa backend-hpa -n tarea-clase8
+horizontalpodautoscaler.autoscaling "backend-hpa" deleted from tarea-clase8 namespace
+docker@ubuntu:~/cursoDocker/curso8$ kubectl delete service frontend-service backend-service -n tarea-clase8
+service "frontend-service" deleted from tarea-clase8 namespace
+service "backend-service" deleted from tarea-clase8 namespace
+docker@ubuntu:~/cursoDocker/curso8$ kubectl delete deployment frontend backend -n tarea-clase8
+deployment.apps "frontend" deleted from tarea-clase8 namespace
+deployment.apps "backend" deleted from tarea-clase8 namespace
+docker@ubuntu:~/cursoDocker/curso8$
+  ```
+
