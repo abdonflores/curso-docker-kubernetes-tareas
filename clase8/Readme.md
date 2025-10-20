@@ -80,9 +80,45 @@ docker@ubuntu:~/cursoDocker/curso8$
    ```
 11. Comandos de verificación
    ```
-  kubectl get all -n tarea-clase8
-  kubectl get ingress -n tarea-clase8
-  kubectl get hpa -n tarea-clase8
+  kubectl get all 
+  docker@ubuntu:~/cursoDocker/curso8$ kubectl get all
+NAME                                     READY   STATUS    RESTARTS        AGE
+pod/webapp-deployment-75dfdbdcd7-jxzdj   1/1     Running   2 (2d22h ago)   4d21h
+pod/webapp-deployment-75dfdbdcd7-wd7rj   1/1     Running   2 (2d22h ago)   4d21h
+pod/webapp-deployment-75dfdbdcd7-xxzf5   1/1     Running   2 (2d22h ago)   4d21h
+
+NAME                     TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+service/kubernetes       ClusterIP   10.96.0.1        <none>        443/TCP        6d3h
+service/webapp-service   NodePort    10.105.172.246   <none>        80:30200/TCP   5d
+
+NAME                                READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/webapp-deployment   3/3     3            3           4d22h
+
+NAME                                           DESIRED   CURRENT   READY   AGE
+replicaset.apps/webapp-deployment-6b4b5bcf9d   0         0         0       4d21h
+replicaset.apps/webapp-deployment-75dfdbdcd7   3         3         3       4d21h
+replicaset.apps/webapp-deployment-79d8b69585   0         0         0       4d21h
+replicaset.apps/webapp-deployment-8f786896f    0         0         0       4d22h
+docker@ubuntu:~/cursoDocker/curso8$ ^C
+kubectl get ingress -n tarea-clase8
+
+docker@ubuntu:~/cursoDocker/curso8$ kubectl get ingress -n tarea-clase8
+NAME          CLASS    HOSTS   ADDRESS        PORTS   AGE
+app-ingress   <none>   *       192.168.49.2   80      72m
+docker@ubuntu:~/cursoDocker/curso8$
+
+  docker@ubuntu:~/cursoDocker/curso8$ kubectl get ingress
+No resources found in default namespace.
+docker@ubuntu:~/cursoDocker/curso8$
+
+
+docker@ubuntu:~/cursoDocker/curso8$ kubectl get hpa
+No resources found in default namespace.
+docker@ubuntu:~/cursoDocker/curso8$ kubectl get hpa -n tarea-clase8
+NAME          REFERENCE            TARGETS              MINPODS   MAXPODS   REPLICAS   AGE
+backend-hpa   Deployment/backend   cpu: <unknown>/50%   2         5         2          73m
+docker@ubuntu:~/cursoDocker/curso8$
+
 
   docker@ubuntu:~/cursoDocker/curso8$ curl http://$(minikube ip)/
 <!DOCTYPE html>
