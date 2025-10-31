@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Proyecto Integrador - Docker & Kubernetes
 
 Aplicación full-stack progresiva que evoluciona clase a clase, desde una API REST simple hasta un sistema completo desplegado en Kubernetes con microservicios, base de datos, cache, frontend, Ingress y HPA.
@@ -261,3 +262,22 @@ Este proyecto es material educativo desarrollado por Alejandro Fiengo para el cu
 - [Docker Documentation](https://docs.docker.com/)
 - [Kubernetes Documentation](https://kubernetes.io/docs/)
 - [Angular Documentation](https://angular.io/docs)
+=======
+# Tareas - Curso Docker & Kubernetes
+
+**Autor**: Luis Abdon Flores  
+**Curso**: [Docker & Kubernetes - i-Quattro](https://iquattrogroup.com/mod/url/view.php?id=1251)
+
+---
+
+## 📚 Índice
+
+- [Clase 1](clase1/)  (https://iquattrogroup.com/mod/url/view.php?id=1251)
+- [Clase 2](clase2/)  (https://github.com/abdonflores/curso-docker-kubernetes-tareas/tree/main/clase2)
+- [Clase 3](clase3/)  (https://github.com/abdonflores/curso-docker-kubernetes-tareas/tree/main/clase3) 
+- [Clase 4](clase4/) (https://github.com/abdonflores/curso-docker-kubernetes-tareas/blob/main/clase4)
+- [Clase 5](clase5/) (https://github.com/abdonflores/curso-docker-kubernetes-tareas/tree/main/clase5)
+- [Clase 6](clase6/)  (https://github.com/abdonflores/curso-docker-kubernetes-tareas/tree/main/clase6)
+- [Clase 7](clase7/)  (https://github.com/abdonflores/curso-docker-kubernetes-tareas/tree/main/clase7)
+- [Clase 8](clase8/)  (https://github.com/abdonflores/curso-docker-kubernetes-tareas/tree/main/clase8)
+>>>>>>> 950be6ef60e41dc54420d0e39482a3eab7e2f5de
